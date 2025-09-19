@@ -36,7 +36,7 @@ $ ./autorun.sh
 #### Yosys 
 
 
-
+```bash
 $ sudo apt-get update
 
 $ git clone https://github.com/YosysHQ/yosys.git
@@ -62,7 +62,7 @@ $ git submodule update --init --recursive
 $ make 
 
 $ sudo make install
-
+```
 ![Yosys Installed Image](images/Yosys_installed.png)
 
 
@@ -70,9 +70,11 @@ $ sudo make install
 
 To install Iverilog use these commands - 
 
+```bash
 $ sudo apt update
 
 $ sudo apt install iverilog
+```
 
 ![Iverilog Installed Image](images/Iverilog_installed.png)
 
@@ -80,12 +82,13 @@ $ sudo apt install iverilog
 
 To install GTK Wave use these commands - 
 
+```bash
 $ sudo apt update 
 
 $sudo apt install gtkwave
 
 ![GTK Wave Installed Image](images/GTKWave_installed.png)
-
+```
 
 
 
