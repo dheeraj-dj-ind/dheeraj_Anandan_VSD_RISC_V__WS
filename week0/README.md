@@ -2,9 +2,9 @@
 
 
 
-#### Week 0 Tasks - 
+## Week 0 Tasks - 
 
-1. ###### Install Oracle Virtual Machine to run Linux on a Windows OS. System requirements are as mentioned below -
+1. ### Install Oracle Virtual Machine to run Linux on a Windows OS. System requirements are as mentioned below -
 
 
 
@@ -15,7 +15,7 @@
 
 
 
-###### 2\. Resize the Ubuntu window to fit monitor screen. Use commands - 
+### 2\. Resize the Ubuntu window to fit monitor screen. Use commands - 
 
 
 
@@ -29,11 +29,11 @@ $ ./autorun.sh
 
 
 
-###### 3\. Installing Tools - 
+### 3\. Installing Tools - 
 
 
 
-Yosys 
+#### Yosys 
 
 
 
@@ -45,7 +45,7 @@ $ cd yosys
 
 $ sudo apt install make               # If make is not installed
 
-$ sudo apt-get install build-essential clang bison flex \\
+$ sudo apt install build-essential clang bison flex \\
 
 &nbsp;   libreadline-dev gawk tcl-dev libffi-dev git \\
 
@@ -62,6 +62,29 @@ $ git submodule update --init --recursive
 $ make 
 
 $ sudo make install
+
+! [Yosys Installed Image] ("D:\OpenSourceTools\dheeraj_Anandan_VSD_RISC_V__WS\week0\images\Yosys_installed.png")
+
+
+#### Iverilog 
+
+To install Iverilog use these commands - 
+
+$ sudo apt update
+
+$ sudo apt install iverilog
+
+! [Iverilog Installed Image] ("D:\OpenSourceTools\dheeraj_Anandan_VSD_RISC_V__WS\week0\images\Iverilog_installed.png")
+
+#### GTK Wave 
+
+To install GTK Wave use these commands - 
+
+$ sudo apt update 
+
+$sudo apt install gtkwave
+
+! [GTK Wave Installed Image] ("D:\OpenSourceTools\dheeraj_Anandan_VSD_RISC_V__WS\week0\images\GTKWave_installed.png")
 
 
 
