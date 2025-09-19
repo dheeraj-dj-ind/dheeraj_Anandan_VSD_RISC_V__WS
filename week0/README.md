@@ -63,7 +63,7 @@ $ make
 
 $ sudo make install
 
-! [Yosys Installed Image] ("D:\OpenSourceTools\dheeraj_Anandan_VSD_RISC_V__WS\week0\images\Yosys_installed.png")
+![Yosys Installed Image](week0/images/Yosys_installed.png)
 
 
 #### Iverilog 
@@ -74,7 +74,7 @@ $ sudo apt update
 
 $ sudo apt install iverilog
 
-! [Iverilog Installed Image] ("D:\OpenSourceTools\dheeraj_Anandan_VSD_RISC_V__WS\week0\images\Iverilog_installed.png")
+![Iverilog Installed Image](week0/images/Iverilog_installed.png)
 
 #### GTK Wave 
 
@@ -84,7 +84,7 @@ $ sudo apt update
 
 $sudo apt install gtkwave
 
-! [GTK Wave Installed Image] ("D:\OpenSourceTools\dheeraj_Anandan_VSD_RISC_V__WS\week0\images\GTKWave_installed.png")
+![GTK Wave Installed Image](week0/images/GTKWave_installed.png)
 
 
 
