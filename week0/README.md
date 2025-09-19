@@ -45,13 +45,10 @@ $ cd yosys
 
 $ sudo apt install make               # If make is not installed
 
-$ sudo apt install build-essential clang bison flex \\
-
-&nbsp;   libreadline-dev gawk tcl-dev libffi-dev git \\
-
-&nbsp;   graphviz xdot pkg-config python3 libboost-system-dev \\
-
-&nbsp;   libboost-python-dev libboost-filesystem-dev zlib1g-dev
+$ sudo apt install build-essential clang bison flex \
+   libreadline-dev gawk tcl-dev libffi-dev git \
+   graphviz xdot pkg-config python3 libboost-system-dev \
+   libboost-python-dev libboost-filesystem-dev zlib1g-dev
 
 $ make config-gcc
 
@@ -86,9 +83,9 @@ To install GTK Wave use these commands -
 $ sudo apt update 
 
 $sudo apt install gtkwave
+```
 
 ![GTK Wave Installed Image](images/GTKWave_installed.png)
-```
 
 
 
