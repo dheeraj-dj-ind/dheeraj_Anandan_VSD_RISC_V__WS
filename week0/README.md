@@ -2,7 +2,7 @@
 
 
 
-## Week 0 Tasks - 
+## Week 0 Day 0 Tasks - 
 
 1. ### Install Oracle Virtual Machine to run Linux on a Windows OS. System requirements are as mentioned below -
 
