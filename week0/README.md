@@ -18,11 +18,12 @@
 ### 2\. Resize the Ubuntu window to fit monitor screen. Use commands - 
 
 
-
+```bash
 $ sudo apt update
 $ sudo apt install build-essential dkms linux-headers-$(uname -r)
 $ cd /media/spatha/VBox\_GAs\_7.1.8/
 $ ./autorun.sh  
+```
 
 
 
@@ -82,7 +83,7 @@ $ git clone https://github.com/The-OpenROAD-Project/OpenSTA
 
 To install ngspice follow these steps - 
 
-1.Download the tarball from https://sourceforge.net/projects/ngspice/files/ to a local
+1.Download the tarball from https://sourceforge.net/projects/ngspice/files/ to a local \
 directory
 2.Unpack it using these commands - 
 
