@@ -83,8 +83,8 @@ $ git clone https://github.com/The-OpenROAD-Project/OpenSTA
 
 To install ngspice follow these steps - 
 
-1.Download the tarball from https://sourceforge.net/projects/ngspice/files/ to your working directory \
-2.Unpack it using these commands - 
+1. Download the tarball from https://sourceforge.net/projects/ngspice/files/ to your working directory \
+2. Unpack it using these commands - 
 
 ```bash 
 $ tar -zxvf ngspice-37.tar.gz
@@ -163,7 +163,7 @@ Use these commands to install the PDK -
 $ cd $HOME
 $ git clone https://github.com/The-OpenROAD-Project/OpenLane 
 $ cd OpenLane 
-$ make // While doing this command, make sure ciel is uptodate and enable to version that OpenLane is asking for. Make sure to create a virtual environment prior to this step.
+$ make // While doing this command, make sure ciel is upto date and enable to version that OpenLane is asking for. Make sure to create a virtual environment prior to this step.
 $ make test 
 ```
  
