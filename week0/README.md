@@ -68,7 +68,7 @@ To install GTK Wave use these commands -
 
 ```bash
 $ sudo apt update 
-$sudo apt install gtkwave
+$ sudo apt install gtkwave
 ```
 
 ![GTK Wave Installed Image](images/GTKWave_installed.png)
