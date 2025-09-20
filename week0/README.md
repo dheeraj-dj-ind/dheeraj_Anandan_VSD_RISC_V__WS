@@ -82,9 +82,9 @@ $ git clone https://github.com/The-OpenROAD-Project/OpenSTA
 
 To install ngspice follow these steps - 
 
-1.\ Download the tarball from https://sourceforge.net/projects/ngspice/files/ to a local
+1.Download the tarball from https://sourceforge.net/projects/ngspice/files/ to a local
 directory
-2.\ Unpack it using these commands - 
+2.Unpack it using these commands - 
 
 ```bash 
 $ tar -zxvf ngspice-37.tar.gz
