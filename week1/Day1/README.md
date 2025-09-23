@@ -60,7 +60,7 @@ $ verilog_files gvim tb_good_mux.v -o good_mux.v
 ### a) What is a synthesizer
 A synthesizer converts HDL code into a gate-level netlist suitable for hardware implementation. The tool we are using here is Yosys.
 
-### c) What is logic synthesis
+### b) What is logic synthesis
 - RTL design is the behavioral representation of required specification.
 - Mapping the RTL code to a digital circuit is called as synthesis.
 - Code is converted to gates and connections are made between them, the output is called as netlist which is a textual representation of the gates and connections. 
@@ -81,7 +81,7 @@ Capacitors are the load in digital digital logic circuits. Faster charging/disch
 - Wider the transistor, less the delay, but comes with trade-off of power and area.
 - Narower the transistor, more is the delay, consumes less power and area. 
 
-### d) Selection of cells
+### b) Selection of cells
 Cell selection balances timing, area, and power criteria based on design requirements.
 The process of guiding the synthesizer to choose cells for optimum function is called contraint.
 If the design has only fast cells - 
