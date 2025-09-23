@@ -30,6 +30,7 @@ Inside the /lib directory we will have our sky130 library files \
 Use the command:
 ```bash
 $ iverilog good_mux.v tb_good_mux.v
+```
 
 
 ### b) Executing a.out file
