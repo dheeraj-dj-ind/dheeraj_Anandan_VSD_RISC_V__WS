@@ -21,8 +21,6 @@ Combinational logic optimization focuses on reducing the complexity and delays i
 
 ## 2. Sequential Logic Optimization
 
-![alt image](images/sequential-logic-opt.jpg)
-
 Sequential logic optimization targets the improvement of flip-flops, latches, and state machines to reduce area, power, and enhance timing by optimizing register placement and clock gating.
 
 - **State Optimization:**  
