@@ -3,7 +3,7 @@ The `.lib` file is a crucial part of ASIC and VLSI design flows, serving as the 
 
 ## 1. What Does the File Signify
 
-![alt image](images/liberty_file.png)
+![alt image](Images/liberty_file.png)
 
 `.lib` files encode the complete behavioral and timing specification of standard library cells used by physical design and synthesis tools. Some of the notable significances are - 
 - tt - Stands for typical transistors
@@ -15,7 +15,7 @@ The `.lib` file is a crucial part of ASIC and VLSI design flows, serving as the 
 
 ## 2. Comparing Gates with Different Flavor
 
-![alt image](images/comparing_std_cells.png)
+![alt image](Images/comparing_std_cells.png)
 
 The `.lib` file includes multiple drive strengths and threshold flavors for cells (like AND2X1, AND2X2, AND2X4), enabling Power-Performance-Area (PPA) trade-offs.
 - More the number of inputs, larger your cell area becomes - Signifies wider transistors, consumes more power 
@@ -43,7 +43,7 @@ show
 write_verilog -noattr multiple_modules_net.v
 !gvim multiple_modules_net.v
 ```
-![Hierarchical Synthesis](images/hierarchical%20design.png)
+![Hierarchical Synthesis](Images/hierarchical%20design.png)
 
 **For Flat Synthesis, use these commands:**
 
@@ -58,11 +58,11 @@ write_verilog -noattr multiple_modules_net.v
 !gvim multiple_modules_net.v
 ```
 
-![Flattened Synthesis](images/flatten%20multiple%20module.png)
+![Flattened Synthesis](Images/flatten%20multiple%20module.png)
 
 **Difference between flatten and hier netlist**
 
-![Hier vs Flatten Netlist](images/hierarchical%20Vs%20Flaten%20syn.png)
+![Hier vs Flatten Netlist](Images/hierarchical%20Vs%20Flaten%20syn.png)
 
 
 ## 5. Submodule Synthesis and Why Do We Need It
@@ -84,7 +84,7 @@ write_verilog -noattr multiple_modules_net.v
 !gvim multiple_modules_net.v
 ```
 
-![alt image](images/sub_module%20syn.png)
+![alt image](Images/sub_module%20syn.png)
 
 ## 6. Why Do We Need Flip Flops
 Flip flops are edge-triggered memory elements essential for state retention, synchronization, and pipelining in sequential circuits.
@@ -102,27 +102,27 @@ Flip flops are edge-triggered memory elements essential for state retention, syn
 An asynchronous reset allows the flip-flop or register to be reset immediately, independent of the clock signal.
 The reset takes effect as soon as the reset signal is asserted, providing quick initialization or clearance of outputs.
 
-![Asycnronous Reset Waveform](images/async_rst_dff_waveform.png)
-![Asyncronous Reset Report](images/dff_async_rst_report.png)
-![Asyncronous Reset Synthesis Output](images/dff_asynrst_syn.png)
+![Asycnronous Reset Waveform](Images/async_rst_dff_waveform.png)
+![Asyncronous Reset Report](Images/dff_async_rst_report.png)
+![Asyncronous Reset Synthesis Output](Images/dff_asynrst_syn.png)
 
 
 ### b) Async Set
 An asynchronous set allows the flip-flop or register to be set immediately, independent of the clock signal. The output is set to 1 depending on async_set signal. The reset takes effect as soon as the reset signal is asserted, providing quick initialization or clearance of outputs.
 
-![Asycnronous Set Waveform](images/asyncset_dff_waveform.png)
-![Asyncronous Set Synthesis Output](images/dff_async_set_syn.png)
+![Asycnronous Set Waveform](Images/asyncset_dff_waveform.png)
+![Asyncronous Set Synthesis Output](Images/dff_async_set_syn.png)
 
 
 ### c) Sync Reset
 
-![alt image](images/sync-reset.jpg)
+![alt image](Images/sync-reset.jpg)
 
 A synchronous reset only affects the flip-flop or register output on a clock edge, making reset behavior predictable and easier to analyze. Reset changes are synchronized with the clock, leading to simpler timing closure and fewer chances of metastability.
 Synchronous resets are generally recommended in large digital designs for improved robustness and easier static timing analysis.
 
-![Sycnronous Set Waveform](images/sync_dff_rst_waveform.png)
-![Syncronous Set Synthesis Output](images/dff_sync_rst_syn.png)
+![Sycnronous Set Waveform](Images/sync_dff_rst_waveform.png)
+![Syncronous Set Synthesis Output](Images/dff_sync_rst_syn.png)
 
 
 
@@ -131,8 +131,8 @@ Synchronous resets are generally recommended in large digital designs for improv
 ### a) Multiply by 2
 Rather than using hardware, we can just append a 0 to the output.\
 The output of multiply by 2 is {a,0}
-![Mul2 Synthesis](images/mul2_syn.png)
-![Mul2 Netlist](images/mul2_netlist.png)
+![Mul2 Synthesis](Images/mul2_syn.png)
+![Mul2 Netlist](Images/mul2_netlist.png)
 
 
 ### b) Multiply by 9
@@ -140,8 +140,8 @@ The output of multiply by 2 is {a,0}
 Multiply by 9 is simply equal to Multiply by 8 + Multiply by 1.\
 Multiply by 8 is equal to the same number appended by 000 and multiply by 1 is the number itself.\
 Therefore Multiply by 9 = {aa}.
-![Mul8 Synthesis](images/mul8_syn.png)
-![Mul8 Netlist](images/mul8_netlist.png)
+![Mul8 Synthesis](Images/mul8_syn.png)
+![Mul8 Netlist](Images/mul8_netlist.png)
 
 
 
