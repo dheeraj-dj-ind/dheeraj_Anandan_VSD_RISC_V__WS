@@ -140,6 +140,7 @@ The output of multiply by 2 is {a,0}
 Multiply by 9 is simply equal to Multiply by 8 + Multiply by 1.\
 Multiply by 8 is equal to the same number appended by 000 and multiply by 1 is the number itself.\
 Therefore Multiply by 9 = {aa}.
+
 ![Mul8 Synthesis](Images/mul8_syn.png)
 ![Mul8 Netlist](Images/mul8_netlist.png)
 
