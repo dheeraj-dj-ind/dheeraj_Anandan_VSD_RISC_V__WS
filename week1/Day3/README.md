@@ -56,9 +56,6 @@ show
 ![Synthesis output for opt_check4](images/opt_check4_syn.png)
 
 ## 4. Optimized Synthesis of Sequential Circuits
-
-![alt image](images/opt-synth-sequential.jpg)
-
 Optimization of sequential circuits during synthesis includes retiming, state minimization, and clock gating to reduce latency, power, and chip area.
 
 ```bash
@@ -92,8 +89,13 @@ They are an optimization technique that is imposed by the synthesizer if there a
 
 ### Examples - 
 ![Counter Codes](images/Counter_codes.png)
+
 - Counter where output q = count[0]
+
 ![Counter_opt1_syn](images/counter_opt1_syn.png)
+
+- Counter where output q = (count[2:0] == 3'b100)
+
 ![Counter_opt2_syn](images/counter_opt2_syn.png)
 
 
