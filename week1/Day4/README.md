@@ -31,20 +31,24 @@ Simulation mismatches between RTL and gate-level can occur due to differences in
 If the sensitivity list of an always block is incomplete, output may not update as expected. For example, in a multiplexer:\
 
 // Incorrect: missing sensitivity to 'sel'
+```bash
 always @(sel) begin
 if (sel)
 y = a;
 else
 y = b;
 end
+```
 
 // Correct: missing sensitivity to 'sel'
+```bash
 always @(*) begin
 if (sel)
 y = a;
 else
 y = b;
 end
+```
 
 
 **Blocking vs Non-Blocking Statements**  
@@ -52,24 +56,31 @@ end
 - **Non-blocking assignment (`<=`):** Executes concurrently, ideal for sequential logic.
 
 // Blocking assignment example
+```bash
 always @(posedge clk)
 a = b;
+```
 
+```bash
 // Non-blocking assignment example
 always @(posedge clk)
 a <= b;
+```
 
 
 **Non-standard Verilog Coding**  
 Unusual coding styles, such as using a case statement with an ambiguous selection, may cause mismatches.
 
 // Example: case with non-standard pattern
+
+```bash
 always @(sel or a or b)
 case (sel)
 2'b00: y = a;
 2'b1?: y = b; // Ambiguity can cause issues
 default: y = 1'bx;
 endcase
+```
 
 ## 5. Performing GLS
 
