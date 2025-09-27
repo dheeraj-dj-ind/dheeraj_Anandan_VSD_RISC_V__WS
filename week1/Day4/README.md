@@ -141,7 +141,6 @@ Careful comparison ensures your design is both functionally and physically corre
 ![Simulation Waveform](images/ternary_mux_waveform.png)
 
 - Gate Level Synthesis Simulation 
-
 ![Gate Level Synthesis Simulation](images/gls_ternary_mux.png)
 
 ### Bad MUX GLS Simulation
@@ -150,7 +149,7 @@ Careful comparison ensures your design is both functionally and physically corre
 ![Simulation Waveform](images/bad_mux_waveform.png)
 
 - Gate Level Synthesis Simulation
-![Gate Level Synthesis Simulation](images/gls_ternary_mux.png)
+![Gate Level Synthesis Simulation](images/Screenshot%20from%202025-09-27%2011-53-40.png)
 
 ### Good MUX GLS Simulation
 
