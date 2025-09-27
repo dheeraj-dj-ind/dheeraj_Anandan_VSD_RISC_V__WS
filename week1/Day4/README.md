@@ -30,7 +30,7 @@ Simulation mismatches between RTL and gate-level can occur due to differences in
 **Missing Sensitivity List**  
 If the sensitivity list of an always block is incomplete, output may not update as expected. For example, in a multiplexer:\
 
-// Incorrect: missing sensitivity to 'sel'
+Incorrect: missing sensitivity to 'sel'
 ```bash
 always @(sel) begin
 if (sel)
@@ -40,7 +40,7 @@ y = b;
 end
 ```
 
-// Correct: missing sensitivity to 'sel'
+Correct: missing sensitivity to 'sel'
 ```bash
 always @(*) begin
 if (sel)
@@ -55,14 +55,15 @@ end
 - **Blocking assignment (`=`):** Executes sequentially, can lead to incorrect simulation order.
 - **Non-blocking assignment (`<=`):** Executes concurrently, ideal for sequential logic.
 
-// Blocking assignment example
+Blocking assignment example
 ```bash
 always @(posedge clk)
 a = b;
 ```
 
+
+Non-blocking assignment example
 ```bash
-// Non-blocking assignment example
 always @(posedge clk)
 a <= b;
 ```
@@ -71,7 +72,7 @@ a <= b;
 **Non-standard Verilog Coding**  
 Unusual coding styles, such as using a case statement with an ambiguous selection, may cause mismatches.
 
-// Example: case with non-standard pattern
+Example: case with non-standard pattern
 
 ```bash
 always @(sel or a or b)
@@ -85,13 +86,10 @@ endcase
 ## 5. Performing GLS
 
 **Requirements for GLS**
-To perform Gate Level Simulation, you need:\
-
-Netlist: The synthesized gate-level representation of your design.\
-
-Verilog Models: Technology library models for the gates used in your netlist.\
-
-Testbench: The same testbench used for RTL simulation, to apply stimulus and check outputs.
+To perform Gate Level Simulation, you need:
+- Netlist: The synthesized gate-level representation of your design.
+- Verilog Models: Technology library models for the gates used in your netlist.
+- Testbench: The same testbench used for RTL simulation, to apply stimulus and check outputs.
 
 **Step 1: Simulate RTL Code and Testbench**
 First, run a functional simulation of your RTL code with the testbench and view the waveform:
@@ -138,19 +136,34 @@ Careful comparison ensures your design is both functionally and physically corre
 
 ## 6. Lab exercises
 ### Ternary Operator MUX GLS Simulation
+
+- Simulation Waveform
 ![Simulation Waveform](images/ternary_mux_waveform.png)
-![Synthesis Diagram](images/ternary_mux_syn.png)
+
+- Gate Level Synthesis Simulation 
+
 ![Gate Level Synthesis Simulation](images/gls_ternary_mux.png)
 
 ### Bad MUX GLS Simulation
+
+- Simulation Waveform
 ![Simulation Waveform](images/bad_mux_waveform.png)
-![Synthesis Diagram](images/ternary_mux_syn.png)
+
+- Gate Level Synthesis Simulation
 ![Gate Level Synthesis Simulation](images/gls_ternary_mux.png)
 
 ### Good MUX GLS Simulation
+
+- Simulation Waveform
 ![Simulation Waveform](images/good_mux_waveform.png)
+
+- Gate Level Synthesis Simulation
 ![Gate Level Synthesis Simulation](images/gls_good_mux.png)
 
 ### Blocking Statment GLS Simulation
+
+- Simulation Waveform
 ![Simulation Waveform](images/bloking_caveat_waveform.png)
+
+- Gate Level Synthesis Simulation
 ![Gate Level Synthesis Simulation](images/gls_blocking_caveat.png)
