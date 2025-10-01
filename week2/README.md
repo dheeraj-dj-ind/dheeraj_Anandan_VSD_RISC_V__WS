@@ -32,8 +32,8 @@ A SoC is like a mini-computer that works on a single chip, instead of designing 
 - Functionalities such as WiFi, Bluetooth, Devcie to Device Communication can be coded onto the chip based on application and need. 
 
 ### Examples of an SoC 
-a) Qualcomm SnapDragon - Used in mobile phones and laptops.
-b) Apple A17 Bionic - Powers iphones.
+a) Qualcomm SnapDragon - Used in mobile phones and laptops.\
+b) Apple A17 Bionic - Powers iphones.\
 c) Samsung Exynos - Used in Samsung Phones.
 
 ### Advantages of using a SoC
@@ -62,3 +62,56 @@ The Baby SoC contains mainly 3 components,
 - Phase Locked Loop: An electronics circuit that is mainly used for continuous clock generation and keeps all components in the SoC running in sync. Matches the SoC's clock with a reference frequency that ensures proper timing for the RVMYTH and DAC. 
 
 - Digital to Analog Converter: The main purpose of this device is to convert digital signals from the RVMYTH to analog output like sound, temperatureor video. 
+
+# Phase Locked Loop
+A Phase-Locked Loop (PLL) is an electronic control system that synchronizes the phase and frequency of its output signal to a reference input signal using feedback mechanisms. It continually adjusts its output so that it remains "locked" in phase and frequency with the input.
+
+### Functionality
+- The PLL compares the phase and frequency of its output signal with the input reference.
+- If there is a difference, it generates a correction signal to adjust the output and minimize this error.
+- Once locked, it maintains a stable relationship between the output and input frequencies, allowing the system to recover, multiply, or generate precise frequencies.
+
+**Type 1 PLL**
+![Type 1 PLL Block Diagram](images/Type%201%20PLL%20(2).png)
+
+**Type 2 PLL**
+![Type 2 PLL Block Diagram](images/Type%202%20PLL%20(1).png)
+
+
+### Key Components 
+- Phase Detector (PD) / Phase-Frequency Detector (PFD): Compares the input and output signal phases and outputs an error signal.
+- Charge Pump (for some types): Converts phase difference into current or voltage.
+- Loop Filter (Low Pass Filter): Smooths the error signal, filtering out high-frequency noise.
+- Voltage-Controlled Oscillator (VCO): Generates the output signal, whose frequency is controlled by the loop filter output.
+- Frequency Divider: Used in the feedback path for frequency synthesis applications, allowing output frequency to be a multiple of the reference.
+
+### Applications 
+- Clock generation and synchronization in microprocessors and digital circuits.
+- Frequency synthesis (generating multiple frequencies from a single base frequency).
+- Demodulation in radio and communication systems (FM, FSK demodulators).
+- Clock and data recovery in serial communication links (USB, Ethernet).
+- Audio and video signal processing, jitter reduction in high-speed data links.
+- Wireless communication, radar, and signal conditioning systems.
+
+# Digital to Analog Converter 
+A DAC is an electronics circuit that converts digital signals to analog signals so that they can tranfer data to devices like cameras, screens, speakers or any device whose output is continuous.
+
+### Key Components
+- Reference Voltage: Sets the maximum output voltage level.
+- Resistor Network / Current Sources: Implements the conversion from digital code to analog value, common in types like weighted-resistor DACs and R-2R ladder DACs.
+- Switches: Controlled by digital inputs to select how much reference voltage is applied to the output.
+- Output Buffer/Amplifier: Provides current drive and isolates the DAC circuitry from external circuits.
+- DACs are usually integrated in metal-oxide-semiconductor (MOS) chips for compactness and precision.
+
+### Types of DAC 
+There are mainly three types of DACs:
+
+- R-2R Ladder DAC
+![R-2R Ladder DAC](images/r-2r-ladder-da-converter.png)
+
+
+- Current Steering DAC
+![Current Steering DAC](images/Six-bit-segmented-current-steering-SCS-DAC.png)
+
+- CHarge Scaling DAC
+![CHarge Scaling DAC](images/1-Figure2-1.png)
