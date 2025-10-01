@@ -115,3 +115,13 @@ There are mainly three types of DACs:
 
 - CHarge Scaling DAC
 ![CHarge Scaling DAC](images/1-Figure2-1.png)
+
+# Why functional modelling is important 
+Functional modeling is performed before RTL and physical design stages to create a clear, high-level representation of the system's intended functionality. This step ensures that the system's operations and data transformations are well understood and correctly defined.\
+
+###Importance of Functional Modeling Before RTL and Physical Design
+- Functional modeling captures what the system should do, focusing on behavior and data flow without getting into circuit or hardware specifics. This clarifies requirements and logic.
+- It enables early validation and detection of design errors or inconsistencies before costly detailed design steps, helping avoid rework in RTL coding or layout.
+- By providing an abstracted blueprint of system operations, it facilitates communication among designers, engineers, and stakeholders, ensuring common understanding.
+- Functional modeling breaks down complex systems into manageable functions and processes, supporting systematic development and verification planning.
+- This step supports optimization decisions by exposing critical functions and data dependencies, guiding efficient RTL and physical design choices later
