@@ -72,10 +72,10 @@ A Phase-Locked Loop (PLL) is an electronic control system that synchronizes the 
 - Once locked, it maintains a stable relationship between the output and input frequencies, allowing the system to recover, multiply, or generate precise frequencies.
 
 **Type 1 PLL**
-![Type 1 PLL Block Diagram](images/Type%201%20PLL%20(2).png)
+![Type 1 PLL Block Diagram](../images/Type%201%20PLL%20(2).png)
 
 **Type 2 PLL**
-![Type 2 PLL Block Diagram](images/Type%202%20PLL%20(1).png)
+![Type 2 PLL Block Diagram](../images/Type%202%20PLL%20(1).png)
 
 
 ### Key Components 
@@ -107,14 +107,14 @@ A DAC is an electronics circuit that converts digital signals to analog signals 
 There are mainly three types of DACs:
 
 - R-2R Ladder DAC
-![R-2R Ladder DAC](images/r-2r-ladder-da-converter.png)
+![R-2R Ladder DAC](../images/r-2r-ladder-da-converter.png)
 
 
 - Current Steering DAC
-![Current Steering DAC](images/Six-bit-segmented-current-steering-SCS-DAC.png)
+![Current Steering DAC](../images/Six-bit-segmented-current-steering-SCS-DAC.png)
 
 - CHarge Scaling DAC
-![CHarge Scaling DAC](images/1-Figure2-1.png)
+![CHarge Scaling DAC](../images/1-Figure2-1.png)
 
 # Why functional modelling is important 
 Functional modeling is performed before RTL and physical design stages to create a clear, high-level representation of the system's intended functionality. This step ensures that the system's operations and data transformations are well understood and correctly defined. 
